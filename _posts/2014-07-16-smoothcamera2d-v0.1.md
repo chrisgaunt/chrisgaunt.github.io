@@ -5,6 +5,8 @@ title: SmoothCamera2D v0.1
 
 I'm going to start as I mean to go on and get right into things by sharing a C# script I made for Unity.
 
+<!-- more -->
+
 Disclaimer: I am learning C# and this was a result of my studies, so there may well be better ways to do this. I would be grateful for any suggestions on how to improve it.
 
 <p class="message">

@@ -15,6 +15,7 @@ author:
   name:           'Chris Gaunt'
   url:            https://twitter.com/ChrisGaunt
 
+excerpt_separator: "<!-- more -->"
 paginate:         5
 
 # Custom vars
