@@ -1,0 +1,24 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Chris Gaunt
+description:      'Aspiring game developer, having a blast developing with the Unity game engine.'
+url:              http://chrisgaunt.com
+baseurl:          /
+
+author:
+  name:           'Chris Gaunt'
+  url:            https://twitter.com/ChrisGaunt
+
+paginate:         5
+
+# Custom vars
+version:          2.1.0
+
+github:
+  repo:           https://github.com/chrisgaunt/chrisgaunt.github.io

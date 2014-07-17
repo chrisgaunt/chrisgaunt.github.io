@@ -1,0 +1,39 @@
+/* Comments */
+.comments {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid #eee;
+}
+
+/* Unity */
+div.broken,
+div.missing {
+  margin: auto;
+  position: relative;
+  top: 50%;
+  width: 193px;
+}
+div.broken a,
+div.missing a {
+  height: 63px;
+  position: relative;
+  top: -31px;
+}
+div.broken img,
+div.missing img {
+  border-width: 0px;
+}
+div.broken {
+  display: none;
+}
+div.unity-player {
+  cursor: default;
+  margin-bottom: 1rem;
+}
+div.unity-message {
+  font-size: 14px;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+  padding: 0.2rem 0;
+  color: #717171;
+}
