@@ -1,31 +1,27 @@
 ---
 layout: post
-title: SmoothCamera2D v0.1
+title: SmoothFollowCamera2D v1.0.0
 ---
+SmoothFollowCamera2D is now at v1!
+I feel it's now ready to be used in real projects, and I'll be using it in my own games.
 
-I'm going to start as I mean to go on and get right into things by sharing a C# script I made for Unity.
+The changes since the last version are:
+
+* Added options to enable/disable all min/max limits individually.
+* Now using <a href="http://docs.unity3d.com/ScriptReference/Vector3.SmoothDamp.html" target="_blank">Vector3.SmoothDamp</a> for the smooth movement calculation.
+* Renamed from SmoothCamera2D to SmoothFollowCamera2D to be clearer on what it is.
+* Renamed min/max & limit variables.
 
 <!-- more -->
 
-Disclaimer: I am learning C# and this was a result of my studies, so there may well be better ways to do this. I would be grateful for any suggestions on how to improve it.
-
 <p class="message">
-  <a href="https://github.com/chrisgaunt/SmoothCamera2D" target="_blank">SmoothCamera2D on GitHub</a> (includes example scenes)
+  <a href="https://github.com/chrisgaunt/SmoothFollowCamera2D" target="_blank">SmoothFollowCamera2D on GitHub</a> (includes example scenes)
 </p>
 
-Feel free to use this script in your games or as a starter script to build your own camera.
+Feel free to use this script in your games.<br>
+If you do use this script I would love to know how you've used it.
 
-### SmoothCamera2D
-
-I've been following several tutorials, reading forums and playing around with example code, but couldn't find the exact kind of chase camera I wanted for my first platformer.
-There's a SmoothFollow.js standard asset, but after trying it out I realized it was for 3D.
-Rather than try to modify the js script I decided to make my own in C#, taking advice from several tutorials and forums.
-
-The criteria for my camera were:
-
-- Follow the player in all directions (up, down, left, right), trying to keep the player in the center of the view.
-- Smoothly catch up to the player once they are a certain distance away (configurable).
-- Optionally, stop moving if the camera hits certain X & Y min/max positions.
+### SmoothFollowCamera2D
 
 Here's the camera without any X & Y position limits set.<br>
 Notice how it shows the blue space behind the level.
@@ -45,16 +41,14 @@ Notice how it shows the blue space behind the level.
 
 <div class="unity-message">Click on the game window and use the arrow keys to move around.</div>
 
-Here's the camera with limits set.<br>Just how I wanted it!
+Here's the camera with limits set.
 
 <div id="unityPlayer2" class="unity-player" style="height:200px;width:270px;"></div>
 
 <div class="unity-message">Examples were created with <a href="http://unity3d.com/unity/" title="Go to unity3d.com" target="_blank">Unity</a> and 2D art by <a href="http://www.kenney.nl/" target="_blank">Kenney</a></div>
 
-If you do use this script I would love to know how you used it.
-
 <p class="message">
-  <a href="https://github.com/chrisgaunt/SmoothCamera2D" target="_blank">SmoothCamera2D on GitHub</a> (includes example scenes)
+  <a href="https://github.com/chrisgaunt/SmoothFollowCamera2D" target="_blank">SmoothFollowCamera2D on GitHub</a> (includes example scenes)
 </p>
 
 <script type="text/javascript">
@@ -110,8 +104,8 @@ document.write('<script type="text\/javascript" src="' + unityObjectUrl + '"><\/
         break;
       }
     });
-    u2.initPlugin(jQuery("#unityPlayer2")[0], "/public/posts/2014-07-16-smoothcamera2d-v0.1/with_limits.unity3d");
-    u1.initPlugin(jQuery("#unityPlayer1")[0], "/public/posts/2014-07-16-smoothcamera2d-v0.1/without_limits.unity3d");
+    u2.initPlugin(jQuery("#unityPlayer2")[0], "/public/posts/2014-07-18-smooth-follow-camera-2D-v1.0.0/with_limits.unity3d");
+    u1.initPlugin(jQuery("#unityPlayer1")[0], "/public/posts/2014-07-18-smooth-follow-camera-2D-v1.0.0/without_limits.unity3d");
   });
 -->
 </script>
