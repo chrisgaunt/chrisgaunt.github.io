@@ -21,8 +21,7 @@ paginate:         5
 # Custom vars
 version:          2.1.0
 
-github:
-  repo:           https://github.com/chrisgaunt/chrisgaunt.github.io
+repository:          https://github.com/chrisgaunt/chrisgaunt.github.io
 
-gems:
+plugins:
   - jekyll-redirect-from
