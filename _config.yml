@@ -8,7 +8,6 @@ permalink:        pretty
 title:            Chris Gaunt
 description:      'Full-stack web developer and hobbyist game developer, having a blast developing with the Unity game engine.'
 url:              http://chrisgaunt.com
-baseurl:          /
 
 author:
   name:           'Chris Gaunt'
